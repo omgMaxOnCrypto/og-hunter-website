@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="OG HUNTER - Username management and authorized account analytics.">
+  <title>OG HUNTER | Username Intelligence</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: #080d18;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .logo span { color: #818cf8; }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+      color: #cbd5e1;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 110px 0 90px;
+    }
+
+    .eyebrow {
+      color: #a5b4fc;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 76px);
+      line-height: 1.1;
+      margin: 22px 0;
+    }
+
+    .gradient {
+      background: linear-gradient(90deg, #818cf8, #38bdf8);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .subtitle {
+      color: #94a3b8;
+      max-width: 600px;
+      margin: 0 auto 32px;
+      font-size: 17px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 9px 15px;
+      border: 1px solid #334155;
+      border-radius: 30px;
+      color: #cbd5e1;
+      margin: 5px;
+      font-size: 13px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 32px;
+      font-size: 30px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding-bottom: 100px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #263244;
+      border-radius: 18px;
+      padding: 28px;
+    }
+
+    .card-icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 { margin: 0 0 10px; }
+
+    .card p {
+      color: #94a3b8;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    footer {
+      border-top: 1px solid #1e293b;
+      padding: 30px 0;
+      color: #94a3b8;
+      font-size: 13px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    @media (max-width: 700px) {
+      .features { grid-template-columns: 1fr; }
+      .nav-links { gap: 12px; }
+      .hero { padding: 80px 0; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">OG <span>HUNTER</span></div>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="eyebrow">USERNAME INTELLIGENCE</div>
+
+      <h1>
+        Discover. Organize.<br>
+        <span class="gradient">Create.</span>
+      </h1>
+
+      <p class="subtitle">
+        Your workspace for username ideas, saved
+        collections, and authorized account analytics.
+      </p>
+
+      <div>
+        <span class="tag">Instagram</span>
+        <span class="tag">TikTok</span>
+        <span class="tag">Telegram Bot</span>
+      </div>
+    </section>
+
+    <section id="features" class="container">
+      <h2 class="section-title">Built for username discovery</h2>
+
+      <div class="features">
+        <div class="card">
+          <div class="card-icon">🔎</div>
+          <h3>Username Generator</h3>
+          <p>
+            Generate short and creative username ideas
+            for your personal collection.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📁</div>
+          <h3>Username Management</h3>
+          <p>
+            Save your favorite names and manage
+            manually recorded availability notes.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📊</div>
+          <h3>Account Analytics</h3>
+          <p>
+            Explore profile statistics from accounts
+            connected through authorized platform APIs.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <span>© OG HUNTER. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
